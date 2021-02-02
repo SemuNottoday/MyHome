@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar_layout"/>
+
+                <LinearLayout
+                    android:id="@+id/house_display_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="7dp"
+                        android:layout_height="65dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="20dp">
+                    <TextView
+                        android:id="@+id/renter_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Dear : "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_marginHorizontal="3dp"
+                        android:layout_marginVertical="7dp"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="Here are list of available rent houses"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="100% Match"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />-->
+
+                    <ListView
+                        android:id="@+id/rent_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp">
+
+                    </ListView>
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="80% Match"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ListView
+                        android:id="@+id/rent_list2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp">
+
+                    </ListView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="60% Match"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ListView
+                        android:id="@+id/rent_list3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp">
+
+                    </ListView>-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/fwhere"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fwith"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fbed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fchild"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/flate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fpower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fowner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/latitude_renter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/longtitude_renter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

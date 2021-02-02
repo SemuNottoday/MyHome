@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+      >
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/find"
+            android:title="Find Home"
+            android:visible="true"
+            android:icon="@drawable/ic_find_in_page_black_24dp"
+            />
+        <item android:id="@+id/fav"
+            android:title="Favorites"
+            android:visible="true"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            />
+        <item android:id="@+id/edit"
+            android:title="View Profile"
+            android:visible="true"
+            android:icon="@drawable/ic_edit_black_24dp"
+            />
+    </group>
+    <item android:id="@+id/space"
+        android:title="" />
+    <group
+        android:checkableBehavior="single"
+        >
+        <item android:id="@+id/rules"
+            android:title="List Home"
+            android:visible="true"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            />
+        <item android:id="@+id/aboutus"
+            android:title="About Us"
+            android:visible="true"
+            android:icon="@drawable/ic_about_us"
+            />
+    </group>
+    <group
+        android:checkableBehavior="single"
+        >
+        <item android:id="@+id/share"
+            android:title="Share"
+            android:visible="true"
+            android:icon="@drawable/ic_share_black_24dp"
+            />
+    </group>
+</menu>

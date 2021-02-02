@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OwnersHome">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <include layout="@layout/toolbar_layout"/>
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:src="@drawable/house_pic"
+                  android:scaleType="fitXY"/>
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/upload_image"
+                  android:layout_width="200dp"
+                  android:layout_height="50dp"
+                  app:cardCornerRadius="15dp"
+                  android:layout_gravity="center"
+                  android:layout_marginVertical="7dp"
+                  app:cardBackgroundColor="@color/colorPrimary">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Upload Image"
+                      android:textStyle="bold"
+                      android:layout_gravity="center"
+                      android:textColor="@color/colorAccent"
+                      android:textSize="23dp"/>
+              </androidx.cardview.widget.CardView>
+              <ImageView
+                  android:id="@+id/image_display"
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:src="@drawable/house_pic"/>
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/upload"
+                  android:layout_width="200dp"
+                  android:layout_height="50dp"
+                  app:cardCornerRadius="15dp"
+                  android:layout_gravity="end"
+                  android:layout_marginVertical="7dp"
+                  app:cardBackgroundColor="@color/colorPrimary">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Upload"
+                      android:textStyle="bold"
+                      android:layout_gravity="center"
+                      android:textColor="@color/colorAccent"
+                      android:textSize="23dp"/>
+              </androidx.cardview.widget.CardView>
+              <TextView
+                  android:id="@+id/houseid_display"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Upload"
+                  android:textStyle="bold"
+                  android:layout_gravity="center"
+                  android:textColor="@color/colorAccent"
+                  android:textSize="23dp"/>
+          </LinearLayout>
+      </ScrollView>
+  </LinearLayout>
+</LinearLayout>

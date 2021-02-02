@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "506443244354",
+    "firebase_url": "https://myrent2.firebaseio.com",
+    "project_id": "myrent2",
+    "storage_bucket": "myrent2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506443244354:android:ab69689ec56255f4d69edb",
+        "android_client_info": {
+          "package_name": "com.example.myrent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506443244354-oh5aaq0fildo62m8rq23q9bi07glmkmn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myrent",
+            "certificate_hash": "bf0109f1ae09d3cfc9348112d363015de531d1aa"
+          }
+        },
+        {
+          "client_id": "506443244354-ninoak52k31qk4hik6pe467q5dtccgmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyl9BtHbXEQMPLn_obn2MIqkPOAWHGGcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506443244354-ninoak52k31qk4hik6pe467q5dtccgmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

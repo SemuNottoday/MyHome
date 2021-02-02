@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar_layout"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/renter_id_holder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:text=""
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="23dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fav_display_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/owner"
+                            android:layout_width="match_parent"
+                            android:layout_marginHorizontal="30dp"
+                            android:layout_marginVertical="7dp"
+                            android:layout_height="65dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Here are list of your favorites"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="23dp"
+                                android:textStyle="bold" />
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <ListView
+                            android:id="@+id/fav_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="616dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp">
+
+                        </ListView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/no_fav_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No List Added Yet "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Homes To you favorite list in Find Home page"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:layout_margin="50dp"
+                            />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/favFind"
+                            android:layout_width="match_parent"
+                            android:layout_marginHorizontal="30dp"
+                            android:gravity="bottom"
+                            android:layout_height="65dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@color/colorPrimary">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Find Home | Search "
+                                android:textColor="@android:color/white"
+                                android:textSize="28dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"/>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
